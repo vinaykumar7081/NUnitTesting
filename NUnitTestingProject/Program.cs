@@ -8,7 +8,7 @@ public class Program
         bool check = true;
         while (check)
         {
-            Console.WriteLine(" Enter Zero To Stop The Excution 0\n Dispaly FibbonacciSeries 1\n Display Perfect Number 2\n Checking Prime or Not 3\n Reversig Number 4\n");
+            Console.WriteLine(" Enter Zero To Stop The Excution 0\n Dispaly FibbonacciSeries 1\n Display Perfect Number 2\n Checking Prime or Not 3\n Reversig Number 4\n Distinct Coupon Number 5\n");
             Console.WriteLine("Enter the Above Option");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -28,6 +28,10 @@ public class Program
                 case 4:
                     ReverseNumber  reverse = new ReverseNumber();
                    reverse .NumberReversing ();
+                    break;
+                case 5:
+                    CouponNumber  coupon = new CouponNumber();
+                    coupon.DistinctNumber ();
                     break;
                 case 0:
                    check = false;
