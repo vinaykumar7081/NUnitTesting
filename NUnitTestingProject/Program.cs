@@ -8,7 +8,7 @@ public class Program
         bool check = true;
         while (check)
         {
-            Console.WriteLine(" Enter Zero To Stop The Excution 0\n Dispaly FibbonacciSeries 1\n Display Perfect Number 2\n");
+            Console.WriteLine(" Enter Zero To Stop The Excution 0\n Dispaly FibbonacciSeries 1\n Display Perfect Number 2\n Checking Prime or Not 3\n");
             Console.WriteLine("Enter the Above Option");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -20,6 +20,10 @@ public class Program
                 case 2:
                     PerfectNumber perfect = new PerfectNumber();
                     perfect.Perfect();
+                    break;
+                case 3:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.Prime();
                     break;
                 case 0:
                    check = false;
